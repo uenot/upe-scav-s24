@@ -18,7 +18,7 @@ for (let i = 0; i < process.env.MAZE_LENGTH; i++) {
 }
 
 app.get(`/maze/${endpt}`, (req, res) => {
-    res.sendFile(path.basename("/etc/secrets/end.txt"));
+    res.sendFile("/etc/secrets/end.txt");
 });
 
 app.get('/', (req, res) => {
