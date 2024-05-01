@@ -25,6 +25,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'intro.html'));
 });
 
+app.get('/hb', (req, res) => {
+    res.send("hi!")
+});
+
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
